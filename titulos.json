@@ -1,0 +1,76 @@
+{
+    "historico_titulos": [
+        {
+            "ano": 2021,
+            "conquistas": [
+                { "data": "13.06", "descricao": "Matias Olivera 1° lugar contrarrelógio promocional - Valle Lunarejo | UY" },
+                { "data": "13.06", "descricao": "Eduardo Severo Jr. 7° lugar geral - Rachão Japa Racing - Livramento | RS" },
+                { "data": "14.06", "descricao": "Matias Olivera 1° lugar Sub.30 - Rally MTB - Lunarejo | UY" },
+                { "data": "01.08", "descricao": "Diego Fernandes 2° lugar MASTER A2 - FK eventos MTB - Uruguaiana | RS" },
+                { "data": "01.08", "descricao": "Eduardo Severo Jr. 5° lugar MASTER A2 - FK eventos MTB - Uruguaiana | RS" },
+                { "data": "01.08", "descricao": "Matias Olivera 1° lugar Sub.30 - FK eventos MTB - Uruguaiana | RS" },
+                { "data": "29.08", "descricao": "Diego Fernandes 1° lugar Master A2 - FK eventos MTB - Uruguaiana | RS" },
+                { "data": "29.08", "descricao": "Matias Olivera 3° lugar Sub.30 - FK eventos MTB- Uruguaiana | RS" },
+                { "data": "28.10", "descricao": "Daniel Dos Santos 2° lugar promocional - Experience - Livramento | RS" },
+                { "data": "28.10", "descricao": "Diego Fernandes 3° lugar Elite - Experience - Livramento | RS" },
+                { "data": "14.11", "descricao": "Diego Fernandes 1° lugar Master A2 - FK eventos MTB - Uruguaiana | RS" }
+            ]
+        },
+        {
+            "ano": 2022,
+            "conquistas": [
+                { "data": "20.03", "descricao": "Diego Fernandes 6° geral Elite - Rachão Japa Racing - Livramento | RS" },
+                { "data": "19.06", "descricao": "Diego Fernandes 3° lugar Master A campeonato inverno - Japa Racing - Livramento | RS" },
+                { "data": "19.06", "descricao": "Eduardo Severo Jr. 4° lugar Master A campeonato inverno - Japa Racing - Livramento | RS" },
+                { "data": "02.07", "descricao": "Diego Fernandes 2° lugar Master A campeonato de inverno - Japa Racing - Livramento | RS" },
+                { "data": "24.07", "descricao": "Diego Fernandes 3° lugar Master A - Rachão Japa Racing - Livramento | RS" }
+            ]
+        },
+        {
+            "ano": 2023,
+            "conquistas": [
+                { "data": "04.04", "descricao": "Diego Fernandes 2° lugar Master A - Rachão Japa Racing - Livramento | RS" },
+                { "data": "04.04", "descricao": "Matheus Da Rosa 3° lugar Master A - Rachão Japa Racing - Livramento | RS" },
+                { "data": "04.04", "descricao": "Eduardo Severo Jr. 4° lugar Master A - Rachão Japa Racing - Livramento | RS" },
+                { "data": "04.04", "descricao": "Alba Leite 1° lugar Master Feninina - Rachão Japa Racing - Livramento | RS" },
+                { "data": "04.04", "descricao": "Jonas Zuketto 1° lugar Promocional - Rachão Japa Racing - Livramento | RS" },
+                { "data": "28.05", "descricao": "Diego Fernandes 4° lugar geral - 100k da Terra - Rivera/ Livramento | RS/ UY" },
+                { "data": "28.05", "descricao": "Eduardo Severo Jr. 7° lugar geral - 100k da Terra - Rivera/ Livramento | RS/ UY" },
+                { "data": "18.05", "descricao": "Eduardo Severo Jr. 5° lugar Master A2 - Desafio Ibirapuitã - Livramento | RS" },
+                { "data": "18.05", "descricao": "Diego Fernandes 1° lugar Master A2 - Desafio Ibirapuitã - Livramento | RS" },
+                { "data": "18.05", "descricao": "Alba Leite 3° lugar Elite Feminina - Desafio Ibirapuitã - Livramento | RS" },
+                { "data": "04.07", "descricao": "Diego Fernandes 1° lugar Master A2 - 3ª etp Copa União - São Gabriel | RS" },
+                { "data": "27.08", "descricao": "Diego Fernandes 1° lugar Master A2 - Volta do Caverá 4ª etp Copa União - Rosário do Sul | RS" },
+                { "data": "27.08", "descricao": "Alba Leite 2° lugar Elite Feminina - Volta do Caverá 4° etp Copa União - Rosário do Sul | RS" },
+                { "data": "03.10", "descricao": "Diego Fernandes 1° lugar Master A2 - Desafio Ibirapuitã 5ª etp Copa União - Livramento | RS" },
+                { "data": "03.10", "descricao": "Alba Leite 3° lugar Elite Feminina - Desafio Ibirapuitã 5ª etp Copa União - Livramento | RS" },
+                { "data": "03.10", "descricao": "Jonas Zuketto 2° lugar promocional - Desafio Ibirapuitã 5ª etp Copa União - Livramento | RS" },
+                { "data": "29.11", "descricao": "Diego Fernandes 2° lugar Master A - MTB Burguer - Bagé | RS" },
+                { "data": "29.11", "descricao": "Alba Leite 2° lugar Elite Feminina - MTB Burguer - Bagé | RS" },
+                { "data": "08.12", "descricao": "Alba Leite 2° lugar Master B Feminina - Final Fronteirão - Valle de Lunarejo | UY" },
+                { "data": "10.12", "descricao": "Diego Fernandes Vice Campeão Copa União - Dom Pedrito | RS" },
+                { "data": "10.12", "descricao": "Jonas Zuketto Campeão Promocional Copa União | Dom Pedrito | RS" }
+            ]
+        },
+        {
+            "ano": 2024,
+            "conquistas": [
+                { "data": "07.01", "descricao": "Eduardo Severo Jr. 5° lugar Master AB - 3ª etp campeonato balancera ruta 27 - Rivera | UY" },
+                { "data": "06.02", "descricao": "Diego Fernandes 2° lugar Master A2 -Copa Verão - Dom Pedrito | RS" },
+                { "data": "06.02", "descricao": "Jonas Zuketto 3° lugar Master A2 - Copa Verão - Dom Pedrito | RS" },
+                { "data": "10.02", "descricao": "Diego Fernandes 3° lugar contrarrelógio Speed - ruta aeroporto - Rivera | UY" },
+                { "data": "10.02", "descricao": "Diego Fernandes 3° lugar categoria AB Speed - ruta aeroporto - Rivera | UY" },
+                { "data": "14.03", "descricao": "Diego Fernandes 1° lugar categoria promocional - Cuchilla Negra - Rivera | UY" },
+                { "data": "14.03", "descricao": "Jonas Zuketto 5° lugar categoria promocional - Cuchilla Negra - Rivera | UY" },
+                { "data": "14.03", "descricao": "Alba Leite 1° lugar catergoria Elite Feminina - Cuchilla Negra - Rivera | UY" },
+                { "data": "09.04", "descricao": "Alba Leite 4° lugar categoria dupla mista - MTB Paso de Los Toros | UY" },
+                { "data": "27.05", "descricao": "Diego Fernandes 3° lugar campeonato balancera ruta 27 - Rivera | UY" },
+                { "data": "04.06", "descricao": "Diego Fernandes 2° lugar categoria AB corrida circuito de rua Speed - Quaraí | RS" },
+                { "data": "11.06", "descricao": "Diego Fernandes 3° lugar categoria Master A2 - Copa União - Bagé | RS" },
+                { "data": "11.06", "descricao": "Matheus Da Rosa 1° lugar categoria Master A1 - Copa União - Bagé | RS" },
+                { "data": "07.08", "descricao": "Diego Fernandes 1° lugar categoria Master A2 - Copa União - Alegrete | RS" },
+                { "data": "07.08", "descricao": "Alba Leite 2° lugar categoria Elite Feminina - Copa União - Alegrete | RS" }
+            ]
+        }
+    ]
+}

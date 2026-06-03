@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campanha 2027 | Rangers Cycling Sport Team</title>
+    <meta name="description"
+        content="Apoie o projeto da Rangers Cycling Sport Team para a temporada 2027. Conheça nossos atletas, pacotes de patrocínio e seja parte dessa vitória.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header / Nav -->
+    <header id="main-header">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-text">RANGERS</span>
+                <span class="logo-year">2027</span>
+            </a>
+            <nav id="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#sobre">O Projeto</a></li>
+                    <li><a href="#atletas">Atletas</a></li>
+                    <li><a href="#conquistas">Conquistas</a></li>
+                    <li><a href="#agenda">Agenda</a></li>
+                    <li><a href="#patrocinios">Patrocínios</a></li>
+                    <li><a href="#apoie" class="btn-primary btn-nav">Apoie Agora</a></li>
+                </ul>
+                <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-bg" id="hero-slider-bg">
+                <!-- Imagens serão carregadas dinamicamente via JS a partir de hero.json -->
+            </div>
+            <div class="hero-bg-overlay"></div>
+            <div class="container hero-layout">
+                <div class="hero-content fade-in-up">
+                    <span class="badge">Projeto 2027</span>
+                    <h1><span class="text-gradient">Rangers</span> Cycling<br>Sport Team</h1>
+                    <p>Não existe segredo entre o homem e a bike. O que existe é equilíbrio entre corpo, mente e
+                        treinos. Faça parte da nossa jornada na temporada 2027!</p>
+                    <div class="hero-actions">
+                        <a href="#patrocinios" class="btn-primary">Seja um Patrocinador</a>
+                        <a href="#apoie" class="btn-secondary">Apoiar Projeto</a>
+                    </div>
+                </div>
+
+                <div class="hero-widget fade-in-up" id="km-widget" style="transition-delay: 0.2s">
+                    <div class="widget-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                        <span>Temporada 2027</span>
+                    </div>
+                    <div class="widget-body">
+                        <div class="km-number"><span id="km-counter">0</span><span class="km-unit">km</span></div>
+                        <div class="km-target">Meta Anual: <span id="km-goal">---</span> km</div>
+                    </div>
+                    <div class="widget-progress">
+                        <div class="widget-progress-fill" id="km-bar" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Naming Rights Banner -->
+        <div id="master-sponsor-container"></div>
+
+        <!-- Sobre o Projeto -->
+        <section id="sobre" class="section-padding">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>Nossa <span class="text-gradient">História</span></h2>
+                    <p class="subtitle">Somos a 3ª geração de uma equipe de ciclismo amador binacional, nascida em 2020
+                        através da amizade entre atletas de Santana do Livramento (BR) e Rivera (UY).</p>
+                </div>
+                <div class="sobre-grid">
+                    <div class="sobre-card fade-in">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="12" r="6"></circle>
+                                <circle cx="12" cy="12" r="2"></circle>
+                            </svg>
+                        </div>
+                        <h3>Nosso Objetivo</h3>
+                        <p>Representar as cidades gêmeas e a região do pampa nas competições de Mountain Bike (MTB) e
+                            Estrada (Speed), incentivando o esporte transformador.</p>
+                    </div>
+                    <div class="sobre-card fade-in" style="transition-delay: 0.1s">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon>
+                                <line x1="9" y1="3" x2="9" y2="18"></line>
+                                <line x1="15" y1="6" x2="15" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h3>Treinos e Roteiros</h3>
+                        <p>Até 340km semanais acumulando mais de 1.600m de altimetria. Treinamos em vias públicas,
+                            rodovias e estradas rurais, com encontros abertos à comunidade.</p>
+                    </div>
+                    <div class="sobre-card fade-in" style="transition-delay: 0.2s">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3>Ação Social (24h)</h3>
+                        <p>Promovemos o Desafio 24h, onde nossos atletas pedalam ininterruptamente para arrecadar
+                            alimentos, engajando toda a comunidade local.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Atletas -->
+        <section id="atletas" class="section-padding bg-alt">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>Nossos <span class="text-gradient">Atletas</span></h2>
+                    <p class="subtitle">O motor da nossa equipe. Conheça as estrelas do pelotão Rangers.</p>
+                </div>
+                <div id="atletas-grid" class="grid-layout">
+                    <!-- Os atletas serão carregados via JavaScript aqui -->
+                    <div class="loading-spinner">Carregando atletas...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Agenda 2027 -->
+        <section id="agenda" class="section-padding">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>Agenda <span class="text-gradient">2027</span></h2>
+                    <p class="subtitle">Onde nossa equipe e nossas marcas parceiras estarão ao longo do ano.</p>
+                </div>
+
+                <div id="agenda-container" class="agenda-tabs-container">
+                    <div class="loading-spinner">Carregando agenda...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conquistas -->
+        <section id="conquistas" class="section-padding bg-alt">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>Nossas <span class="text-gradient">Conquistas</span></h2>
+                    <p class="subtitle">Um histórico de vitórias que comprova a força do nosso projeto.</p>
+                </div>
+                <div id="titulos-container" class="titulos-wrapper">
+                    <div class="loading-spinner">Carregando conquistas...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Patrocínios -->
+        <section id="patrocinios" class="section-padding">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>Seja um <span class="text-gradient">Patrocinador</span></h2>
+                    <p class="subtitle">Associe sua marca à vitória. Conheça nossos pacotes comerciais para a temporada
+                        2027.</p>
+                </div>
+                <div class="pricing-grid">
+                    <!-- Cota Bronze -->
+                    <div class="pricing-card fade-in">
+                        <div class="card-header">
+                            <h3>Bronze</h3>
+                            <div class="price">Consulte</div>
+                        </div>
+                        <ul class="features">
+                            <li><i class="check-icon">✓</i> Logo no site oficial</li>
+                            <li><i class="check-icon">✓</i> Menção em posts nas redes sociais</li>
+                            <li><i class="check-icon">✓</i> Certificado de Apoio ao Esporte</li>
+                        </ul>
+                        <a href="mailto:contato@exemplo.com?subject=Interesse%20Cota%20Bronze"
+                            class="btn-outline">Solicitar Proposta</a>
+                    </div>
+
+                    <!-- Cota Ouro (Destaque) -->
+                    <div class="pricing-card featured fade-in" style="transition-delay: 0.1s">
+                        <div class="badge-popular">Mais Buscado</div>
+                        <div class="card-header">
+                            <h3>Ouro</h3>
+                            <div class="price">Consulte</div>
+                        </div>
+                        <ul class="features">
+                            <li><i class="check-icon">✓</i> Logo em destaque no uniforme</li>
+                            <li><i class="check-icon">✓</i> Logo em tendas e carros de apoio</li>
+                            <li><i class="check-icon">✓</i> Posts exclusivos da marca</li>
+                            <li><i class="check-icon">✓</i> Destaque máximo no site oficial</li>
+                            <li><i class="check-icon">✓</i> Presença de atletas em eventos da marca</li>
+                        </ul>
+                        <a href="mailto:contato@exemplo.com?subject=Interesse%20Cota%20Ouro"
+                            class="btn-primary">Solicitar Proposta</a>
+                    </div>
+
+                    <!-- Cota Prata -->
+                    <div class="pricing-card fade-in" style="transition-delay: 0.2s">
+                        <div class="card-header">
+                            <h3>Prata</h3>
+                            <div class="price">Consulte</div>
+                        </div>
+                        <ul class="features">
+                            <li><i class="check-icon">✓</i> Logo no uniforme (secundário)</li>
+                            <li><i class="check-icon">✓</i> Menção em todos os vídeos/reels</li>
+                            <li><i class="check-icon">✓</i> Destaque médio no site oficial</li>
+                            <li><i class="check-icon">✓</i> Banner em eventos próprios</li>
+                        </ul>
+                        <a href="mailto:contato@exemplo.com?subject=Interesse%20Cota%20Prata"
+                            class="btn-outline">Solicitar Proposta</a>
+                    </div>
+                </div>
+
+                <div class="naming-rights-banner fade-in">
+                    <div class="nr-content">
+                        <h3>Cota Master / Naming Rights</h3>
+                        <p>Seja o patrocinador principal e dê nome à equipe (Ex: Rangers "Sua Marca" Cycling Team).
+                            Visibilidade absoluta e exclusividade no segmento.</p>
+                    </div>
+                    <a href="mailto:contato@exemplo.com?subject=Interesse%20Naming%20Rights" class="btn-primary">Falar
+                        com a Equipe</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Patrocinadores Atuais -->
+        <section id="parceiros" class="section-padding bg-alt">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>Marcas que já <span class="text-gradient">Pedalam</span> com a gente</h2>
+                </div>
+                <div id="parceiros-grid" class="sponsors-wrapper">
+                    <!-- Patrocinadores serão carregados via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Apoie a Equipe -->
+        <section id="apoie" class="section-padding">
+            <div class="container">
+                <div class="cta-box fade-in">
+                    <div class="cta-text">
+                        <h2>Abrace nosso <span class="text-gradient">Circuito</span></h2>
+                        <p>Além de manter a estrutura da nossa equipe de alto rendimento, seu apoio viabiliza
+                            iniciativas sociais importantes como o nosso Desafio 24h de arrecadação de alimentos. Faça
+                            parte dessa engrenagem!</p>
+
+                        <div class="support-methods">
+                            <div class="support-item">
+                                <span class="support-icon">💸</span>
+                                <div>
+                                    <h4>Chave PIX (E-mail)</h4>
+                                    <p class="pix-key">doacoes@rangerscycling.com.br</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="support-buttons">
+                            <a href="#" class="btn-primary btn-vakinha">Apoiar no Vakinha</a>
+                            <a href="#" class="btn-outline btn-apoiase">Apoia.se</a>
+                        </div>
+                    </div>
+                    <div class="cta-image">
+                        <!-- Imagem gerada via CSS ou placeholder no JS -->
+                        <div class="glass-card mockup-card">
+                            <h3>Juntos transpomos fronteiras!</h3>
+                            <div class="progress-container">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 35%;"></div>
+                                </div>
+                                <div class="progress-stats">
+                                    <span>R$ 3.500 arrecadados</span>
+                                    <span>Meta: R$ 10.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-text">RANGERS</span>
+                </a>
+                <p>União Binacional de Ciclismo.<br>Sant'Ana do Livramento, Brasil - Uruguai.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Links Úteis</h4>
+                <ul>
+                    <li><a href="#sobre">O Projeto</a></li>
+                    <li><a href="#atletas">Atletas</a></li>
+                    <li><a href="#patrocinios">Patrocinadores</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contato</h4>
+                <p>contato@rangerscycling.com.br</p>
+                <p>+55 (55) 99999-9999</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="Strava">ST</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Rangers Cycling Sport Team. Todos os direitos reservados. Projeto 2027.</p>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+
+    <!-- Pitch Config FAB -->
+    <button id="pitch-config-btn" class="fab-btn" aria-label="Configurações de Apresentação">⚙️</button>
+    <div id="pitch-config-panel" class="config-panel hidden">
+        <div class="config-header">
+            <h3>Apresentação (Pitch)</h3>
+            <button id="close-config" class="close-btn">&times;</button>
+        </div>
+        <div class="config-body">
+            <label for="sponsor-select">Simular Naming Rights:</label>
+            <select id="sponsor-select">
+                <option value="">Carregando...</option>
+            </select>
+            <small style="color:var(--text-muted); font-size:0.75rem; margin-top:0.5rem;">Selecione um patrocinador para
+                ver como ficaria no banner principal.</small>
+        </div>
+    </div>
+</body>
+
+</html>

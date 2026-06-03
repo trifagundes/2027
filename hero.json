@@ -1,0 +1,20 @@
+{
+    "slides": [
+        {
+            "src": "https://images.unsplash.com/photo-1615632778185-48e15a6f68bf",
+            "alt": "Rangers Cycling Sport Team Peloton"
+        },
+        {
+            "src": "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1920&q=80",
+            "alt": "Rangers Mountain Peloton"
+        },
+        {
+            "src": "https://images.unsplash.com/photo-1637830001298-1b90cc9a184a",
+            "alt": "Rangers Mountain Peloton"
+        },
+        {
+            "src": "https://images.unsplash.com/photo-1631276893368-554b60393efb",
+            "alt": "Rangers Mountain Peloton"
+        }
+    ]
+}

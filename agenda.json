@@ -1,0 +1,141 @@
+{
+  "trimestres": [
+    {
+      "id": "q1",
+      "nome": "1º Trimestre",
+      "eventos": [
+        {
+          "mes": "MAR",
+          "dia": "15",
+          "titulo": "Desafio da Fronteira - XCM",
+          "local": "Sant'Ana do Livramento, RS",
+          "descricao": "Abertura da temporada de Mountain Bike na região de fronteira, com percursos pelas coxilhas pampianas.",
+          "tag": "Mountain Bike"
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "nome": "2º Trimestre",
+      "eventos": [
+        {
+          "mes": "ABR",
+          "dia": "19",
+          "titulo": "Copa União - 1ª Etapa XCO",
+          "local": "Bagé, RS",
+          "descricao": "Abertura do campeonato regional com o circuito fechado e técnico de XCO.",
+          "tag": "MTB XCO",
+          "link": "https://www.instagram.com/copauniaomtb/"
+        },
+        {
+          "mes": "MAI",
+          "dia": "03",
+          "titulo": "Copa União - 1ª Etapa XCM",
+          "local": "Rivera, UY",
+          "descricao": "Maratona de mountain bike marcando a integração internacional no Uruguai.",
+          "tag": "Mountain Bike",
+          "link": "https://www.instagram.com/copauniaomtb/"
+        },
+        {
+          "mes": "MAI",
+          "dia": "10",
+          "titulo": "Volta Internacional do Pampa",
+          "local": "Rivera, UY / Livramento, BR",
+          "descricao": "Prova de estrada binacional de alto nível técnico, atraindo equipes do Brasil, Uruguai e Argentina.",
+          "tag": "Ciclismo de Estrada"
+        },
+        {
+          "mes": "JUN",
+          "dia": "07",
+          "titulo": "Copa União - 2ª Etapa XCM",
+          "local": "Rosário do Sul, RS",
+          "descricao": "Estágio de maratona encarando os temidos estradões de Rosário do Sul.",
+          "tag": "Mountain Bike",
+          "link": "https://www.instagram.com/copauniaomtb/"
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "nome": "3º Trimestre",
+      "eventos": [
+        {
+          "mes": "AGO",
+          "dia": "09",
+          "titulo": "Copa União - 2ª Etapa XCO",
+          "local": "Sant'Ana do Livramento, BR / Rivera, UY",
+          "descricao": "O circuito olímpico mais tradicional da fronteira, unindo os dois países.",
+          "tag": "MTB XCO",
+          "link": "https://www.instagram.com/copauniaomtb/"
+        },
+        {
+          "mes": "SET",
+          "dia": "27",
+          "titulo": "Copa União - Grande Final XCO",
+          "local": "Dom Pedrito, RS",
+          "descricao": "A disputa decisiva do circuito fechado para coroar os campeões da temporada.",
+          "tag": "MTB XCO",
+          "link": "https://www.instagram.com/copauniaomtb/"
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "nome": "4º Trimestre",
+      "eventos": [
+        {
+          "mes": "OUT",
+          "dia": "12",
+          "titulo": "Maratona do Pampa",
+          "local": "Dom Pedrito, RS",
+          "descricao": "Competição de resistência extrema pelas estradas de terra do pampa gaúcho.",
+          "tag": "Mountain Bike"
+        },
+        {
+          "mes": "OUT",
+          "dia": "18",
+          "titulo": "Copa União - 3ª Etapa XCM",
+          "local": "Dom Pedrito, RS",
+          "descricao": "Último desafio antes da final da maratona regional, acumulando pontos decisivos.",
+          "tag": "Mountain Bike",
+          "link": "https://www.instagram.com/copauniaomtb/"
+        },
+        {
+          "mes": "OUT",
+          "dia": "25",
+          "titulo": "Desafio Binacional 100K da Terra",
+          "local": "Rivera, UY",
+          "descricao": "Única corrida de Mountain Bike de 100 km da região de fronteira, integrando Brasil e Uruguai.",
+          "tag": "Mountain Bike",
+          "link": "https://www.instagram.com/100kdaterra/"
+        },
+        {
+          "mes": "NOV",
+          "dia": "08",
+          "titulo": "Copa Sul de MTB - Etapa Final",
+          "local": "Santa Maria, RS",
+          "descricao": "Encerramento da temporada de XCO, valendo pontos para o ranking estadual.",
+          "tag": "MTB XCO"
+        },
+        {
+          "mes": "NOV",
+          "dia": "22",
+          "titulo": "Copa União - Grande Final XCM",
+          "local": "Bagé, RS",
+          "descricao": "O encerramento do calendário de maratonas, coroando os campeões gerais do circuito.",
+          "tag": "Mountain Bike",
+          "link": "https://www.instagram.com/copauniaomtb/"
+        },
+        {
+          "mes": "NOV",
+          "dia": "23",
+          "titulo": "Fronterón MTB - Grande Final",
+          "local": "Tranqueras, Rivera, UY",
+          "descricao": "Competição trinacional (ARG, BRA, URU) celebrando o esporte e o turismo em um circuito desafiador na natureza.",
+          "tag": "Mountain Bike",
+          "link": "https://www.fronteronmtb.com/"
+        }
+      ]
+    }
+  ]
+}

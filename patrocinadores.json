@@ -1,0 +1,52 @@
+{
+    "patrocinadores": [
+        {
+            "id": 5,
+            "nome": "Shopping China Importados",
+            "tipo": "imagem",
+            "src": "https://i0.wp.com/comprasimportadas.com/wp-content/uploads/2018/03/shopping-china-522008.jpg",
+            "cor_primaria": "#FF2A2A",
+            "cor_secundaria": "#4A6BFF"
+        },
+        {
+            "id": 6,
+            "nome": "Banrisul",
+            "tipo": "imagem",
+            "src": "https://www.rbsdirect.com.br/filestore/5/4/4/7/4/7/2_c2f44cf87c1a02d/2747445_0c41128b514a816.jpg?w=1024&h=512&a=c&version=1575255600",
+            "cor_primaria": "#0082FF",
+            "cor_secundaria": "#00D2B4"
+        },
+        {
+            "id": 7,
+            "nome": "Rosul Combustiveis",
+            "tipo": "imagem",
+            "src": "src/sponsors/logo_rosul.png",
+            "cor_primaria": "#007A9F",
+            "cor_secundaria": "#092B54"
+        },
+        {
+            "id": 8,
+            "nome": "Governo Federal",
+            "tipo": "imagem",
+            "src": "src/sponsors/logo_governo_federal.jpg",
+            "cor_primaria": "#00A859",
+            "cor_secundaria": "#FFD100"
+        },
+        {
+            "id": 9,
+            "nome": "Governo do RS",
+            "tipo": "imagem",
+            "src": "src/sponsors/logo_gov_rs.png",
+            "cor_primaria": "#C63042",
+            "cor_secundaria": "#B3C268"
+        },
+        {
+            "id": 10,
+            "nome": "Siñeriz Free Shop",
+            "tipo": "imagem",
+            "imagem": "src/sponsors/logo_sineriz.webp",
+            "cor_primaria": "#427B13",
+            "cor_secundaria": "#6FB014"
+        }
+    ]
+}

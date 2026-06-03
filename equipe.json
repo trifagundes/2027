@@ -1,0 +1,205 @@
+{
+    "equipe": {
+        "nome": "Rangers Cycling Sport Team",
+        "temporada": 2027,
+        "sede": "Sant'Ana do Livramento, RS, Brasil",
+        "natureza": "União Binacional de Ciclismo (Brasil - Uruguai)",
+        "estatisticas_temporada": {
+            "km_meta_anual": 15000,
+            "km_atual": 8450,
+            "altimetria_acumulada": 45000
+        }
+    },
+    "atletas": [
+        {
+            "id": 1,
+            "nome": "Diego Fernandes",
+            "idade": 40,
+            "cidade_natal": "Sant'Ana do Livramento",
+            "estado_provincia": "Rio Grande do Sul",
+            "pais": "Brasil",
+            "codigo_pais": "BR",
+            "bandeira_emoji": "🇧🇷",
+            "categoria_principal": "MTB",
+            "especialidade": "Subidas de Ritmo Constante / Maratona XCM",
+            "foto": "src/atletas/diego-fernandes.jpg",
+            "instagram": "https://www.instagram.com/diegofernandes.g/",
+            "dados_desempenho_estimados": {
+                "ftp_watts": 320,
+                "peso_kg": 72,
+                "watts_kg": 4.44
+            }
+        },
+        {
+            "id": 2,
+            "nome": "Juan Gimenez",
+            "idade": 45,
+            "cidade_natal": "Durazno",
+            "estado_provincia": "Durazno",
+            "pais": "Uruguai",
+            "codigo_pais": "UY",
+            "bandeira_emoji": "🇺🇾",
+            "categoria_principal": "Estrada",
+            "especialidade": "Sprint Final / Ataques de Curta Duração",
+            "foto": "https://i.pravatar.cc/150?img=68",
+            "instagram": "https://www.instagram.com/juangimenez_22_22/",
+            "dados_desempenho_estimados": {
+                "ftp_watts": 340,
+                "peso_kg": 75,
+                "watts_kg": 4.53
+            }
+        },
+        {
+            "id": 3,
+            "nome": "Eduardo Severo Jr.",
+            "idade": 41,
+            "cidade_natal": "Sant'Ana do Livramento",
+            "estado_provincia": "Rio Grande do Sul",
+            "pais": "Brasil",
+            "codigo_pais": "BR",
+            "bandeira_emoji": "🇧🇷",
+            "categoria_principal": "Estrada",
+            "especialidade": "Escalador / Passador em Altimetrias Elevadas",
+            "foto": "src/atletas/eduardo_padilha.jpg",
+            "instagram": "https://www.instagram.com/edu_severojr/",
+            "dados_desempenho_estimados": {
+                "ftp_watts": 300,
+                "peso_kg": 65,
+                "watts_kg": 4.62
+            }
+        },
+        {
+            "id": 4,
+            "nome": "Paola de Oliveira",
+            "idade": 30,
+            "cidade_natal": "Dom Pedrito",
+            "estado_provincia": "Rio Grande do Sul",
+            "pais": "Brasil",
+            "codigo_pais": "BR",
+            "bandeira_emoji": "🇧🇷",
+            "categoria_principal": "MTB",
+            "especialidade": "Resistência de Longo Volume / XCO Técnico",
+            "foto": "src/atletas/paola-de-oliveira.webp",
+            "instagram": "https://www.instagram.com/olivera9667/",
+            "dados_desempenho_estimados": {
+                "ftp_watts": 235,
+                "peso_kg": 58,
+                "watts_kg": 4.05
+            }
+        },
+        {
+            "id": 5,
+            "nome": "Alba Leite",
+            "idade": 48,
+            "cidade_natal": "Sant'Ana do Livramento",
+            "estado_provincia": "Rio Grande do Sul",
+            "pais": "Brasil",
+            "codigo_pais": "BR",
+            "bandeira_emoji": "🇧🇷",
+            "categoria_principal": "Estrada",
+            "especialidade": "Pace de Pelotão / Contra-relógio Individual",
+            "foto": "src/atletas/alba-leite.webp",
+            "instagram": "https://www.instagram.com/alba.leite.10/",
+            "dados_desempenho_estimados": {
+                "ftp_watts": 240,
+                "peso_kg": 62,
+                "watts_kg": 3.87
+            }
+        },
+        {
+            "id": 6,
+            "nome": "Leonardo Brum",
+            "idade": 30,
+            "cidade_natal": "Dom Pedrito",
+            "estado_provincia": "Rio Grande do Sul",
+            "pais": "Brasil",
+            "codigo_pais": "BR",
+            "bandeira_emoji": "🇧🇷",
+            "categoria_principal": "MTB",
+            "especialidade": "Força Bruta / Estradas de Terra e Cascalho",
+            "foto": "src/atletas/leonardo-brum.webp",
+            "instagram": "https://www.instagram.com/brum1774/",
+            "dados_desempenho_estimados": {
+                "ftp_watts": 315,
+                "peso_kg": 76,
+                "watts_kg": 4.14
+            }
+        },
+        {
+            "id": 7,
+            "nome": "Renan Tarouco",
+            "idade": 36,
+            "cidade_natal": "Dom Pedrito",
+            "estado_provincia": "Rio Grande do Sul",
+            "pais": "Brasil",
+            "codigo_pais": "BR",
+            "bandeira_emoji": "🇧🇷",
+            "categoria_principal": "MTB",
+            "especialidade": "Circuitos de XCO Técnico / Terrenos Acidentados",
+            "foto": "https://i.pravatar.cc/150?img=11",
+            "instagram": "https://instagram.com/renantarouco_rangers",
+            "dados_desempenho_estimados": {
+                "ftp_watts": 290,
+                "peso_kg": 70,
+                "watts_kg": 4.14
+            }
+        },
+        {
+            "id": 8,
+            "nome": "Junior Trindade",
+            "idade": 36,
+            "cidade_natal": "Sant'Ana do Livramento",
+            "estado_provincia": "Rio Grande do Sul",
+            "pais": "Brasil",
+            "codigo_pais": "BR",
+            "bandeira_emoji": "🇧🇷",
+            "categoria_principal": "MTB",
+            "especialidade": "Super Endurance / Maratonas de Ultra Distância",
+            "foto": "src/atletas/jr-trindade.jpg",
+            "instagram": "https://www.instagram.com/junior.trindadee/",
+            "dados_desempenho_estimados": {
+                "ftp_watts": 310,
+                "peso_kg": 74,
+                "watts_kg": 4.19
+            }
+        },
+        {
+            "id": 9,
+            "nome": "Vinicius Gonçalves",
+            "idade": 24,
+            "cidade_natal": "Sant'Ana do Livramento",
+            "estado_provincia": "Rio Grande do Sul",
+            "pais": "Brasil",
+            "codigo_pais": "BR",
+            "bandeira_emoji": "🇧🇷",
+            "categoria_principal": "Estrada",
+            "especialidade": "Velocidade Pura / Explosão de Fuga",
+            "foto": "src/atletas/vinicius-goncalves.jpg",
+            "instagram": "https://www.instagram.com/_vinnyx_/",
+            "dados_desempenho_estimados": {
+                "ftp_watts": 330,
+                "peso_kg": 71,
+                "watts_kg": 4.65
+            }
+        },
+        {
+            "id": 10,
+            "nome": "Oeslei Dorneles",
+            "idade": 43,
+            "cidade_natal": "Sant'Ana do Livramento",
+            "estado_provincia": "Rio Grande do Sul",
+            "pais": "Brasil",
+            "codigo_pais": "BR",
+            "bandeira_emoji": "🇧🇷",
+            "categoria_principal": "MTB",
+            "especialidade": "MTB Raiz / Maratonas de Alta Exigência Física",
+            "foto": "https://i.pravatar.cc/150?img=51",
+            "instagram": "https://www.instagram.com/pr.oeslei/",
+            "dados_desempenho_estimados": {
+                "ftp_watts": 320,
+                "peso_kg": 78,
+                "watts_kg": 4.10
+            }
+        }
+    ]
+}
