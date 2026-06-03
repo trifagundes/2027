@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadTitulos();
     loadPatrocinadores();
     loadAgenda();
+    initPixCopy();
 });
 
 /* ==========================================================================
@@ -577,5 +578,30 @@ async function initPitchConfig() {
             // Deixa em estado neutro (sem banner master)
             container.innerHTML = '';
         }
+    });
+}
+
+/* ==========================================================================
+   PIX Copy Button
+   ========================================================================== */
+function initPixCopy() {
+    const btnCopy = document.getElementById('btn-copy-pix');
+    const pixKeyText = document.getElementById('pix-key-text');
+    const feedback = document.getElementById('copy-feedback');
+
+    if (!btnCopy || !pixKeyText || !feedback) return;
+
+    btnCopy.addEventListener('click', (e) => {
+        e.preventDefault();
+        const textToCopy = pixKeyText.textContent.trim();
+        
+        navigator.clipboard.writeText(textToCopy).then(() => {
+            feedback.classList.add('show');
+            setTimeout(() => {
+                feedback.classList.remove('show');
+            }, 2000);
+        }).catch(err => {
+            console.error('Falha ao copiar:', err);
+        });
     });
 }
