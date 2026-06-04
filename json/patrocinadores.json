@@ -33,7 +33,7 @@
             "id": 8,
             "nome": "Governo Federal",
             "tipo": "imagem",
-            "src": "src/sponsors/logo_governo_federal.jpg",
+            "src": "src/sponsors/logo_governo_federal_1.png",
             "cor_primaria": "#00A859",
             "cor_secundaria": "#FFD100"
         },
@@ -41,7 +41,7 @@
             "id": 9,
             "nome": "Governo do RS",
             "tipo": "imagem",
-            "src": "src/sponsors/logo_gov_rs.png",
+            "src": "src/sponsors/logo-gov-rs.png",
             "cor_primaria": "#C63042",
             "cor_secundaria": "#B3C268"
         },
