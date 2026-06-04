@@ -29,6 +29,17 @@
     --glass-blur: blur(12px);
 }
 
+/* Light Theme Overrides (Surface Colors) */
+html.light {
+    --bg-dark: #FFFFFF;
+    --bg-alt: #FAFAFA;
+    --card-bg: #F3F4F6;
+    --card-border: rgba(0, 0, 0, 0.08);
+    --text-main: #1E293B;
+    --text-muted: #64748B;
+    --shadow-neon: 0 10px 20px color-mix(in srgb, var(--accent-green) 15%, transparent);
+}
+
 /* ==========================================================================
    Reset & Base Styles
    ========================================================================== */
@@ -145,9 +156,17 @@ ul {
     backdrop-filter: var(--glass-blur);
 }
 
+html.light .btn-secondary {
+    background: rgba(0, 0, 0, 0.05);
+}
+
 .btn-secondary:hover {
     background: rgba(255, 255, 255, 0.2);
     transform: translateY(-2px);
+}
+
+html.light .btn-secondary:hover {
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .btn-outline {
@@ -196,6 +215,10 @@ ul {
     background: color-mix(in srgb, #0a0a0c 85%, transparent);
     backdrop-filter: var(--glass-blur);
     border-bottom: 1px solid var(--card-border);
+}
+
+html.light #main-header.scrolled {
+    background: color-mix(in srgb, var(--bg-dark) 85%, transparent);
 }
 
 #main-header .container {
@@ -321,6 +344,10 @@ ul {
     background-image: radial-gradient(circle at 80% 30%, color-mix(in srgb, var(--accent-green) 15%, transparent) 0%, transparent 40%),
                       radial-gradient(circle at 20% 80%, color-mix(in srgb, var(--accent-cyan) 10%, transparent) 0%, transparent 40%);
     z-index: -1;
+}
+
+html.light .hero-bg-overlay {
+    background-color: color-mix(in srgb, var(--bg-dark) 85%, transparent);
 }
 
 .hero-layout {
@@ -488,13 +515,16 @@ ul {
     max-width: 250px;
     max-height: 80px;
     object-fit: contain;
-    filter: drop-shadow(0 0 10px color-mix(in srgb, #ffffff 10%, transparent));
+    background: #FFFFFF;
+    padding: 0.5rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     transition: var(--transition);
 }
 
 .master-logo:hover {
     transform: scale(1.05);
-    filter: drop-shadow(0 0 15px color-mix(in srgb, var(--accent-green) 30%, transparent));
+    box-shadow: 0 8px 30px color-mix(in srgb, var(--accent-green) 40%, transparent);
 }
 
 .master-msg {
@@ -822,6 +852,7 @@ ul {
     filter: grayscale(0%) opacity(1);
     transform: translateY(-3px);
     border-color: color-mix(in srgb, var(--text-main) 10%, transparent);
+    background: #FFFFFF;
 }
 
 .sponsor-logo-item img {

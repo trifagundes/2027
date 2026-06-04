@@ -1,5 +1,14 @@
+// Executa imediatamente para evitar piscar tela
+(function() {
+    const savedTheme = localStorage.getItem('site_theme');
+    if (savedTheme === 'light') {
+        document.documentElement.classList.add('light');
+    }
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
     // Inicialização
+    initThemeToggle();
     initNavigation();
     loadHeroSlider();
     initPitchConfig();
@@ -15,6 +24,22 @@ document.addEventListener('DOMContentLoaded', () => {
     loadCampanha();
 });
 
+/* ==========================================================================
+   Data Fetcher (LocalStorage Fallback)
+   ========================================================================== */
+async function fetchData(storageKey, url) {
+    const localData = localStorage.getItem(storageKey);
+    if (localData) {
+        try {
+            return JSON.parse(localData);
+        } catch(e) {
+            console.error('Erro ao fazer parse do localStorage para', storageKey);
+        }
+    }
+    const response = await fetch(url);
+    if (!response.ok) throw new Error('Falha ao carregar ' + url);
+    return await response.json();
+}
 /* ==========================================================================
    Navigation & Mobile Menu
    ========================================================================== */
@@ -59,10 +84,7 @@ async function loadAgenda() {
     if (!container) return;
 
     try {
-        const response = await fetch('./json/agenda.json');
-        if (!response.ok) throw new Error('Falha ao carregar agenda');
-        
-        const data = await response.json();
+        const data = await fetchData('ciclismo_agenda', './json/agenda.json');
         const trimestres = data.trimestres;
         
         if (data.conteudo) {
@@ -180,10 +202,7 @@ async function loadEquipe() {
     const grid = document.getElementById('atletas-grid');
     
     try {
-        const response = await fetch('./json/equipe.json');
-        if (!response.ok) throw new Error('Falha ao carregar equipe');
-        
-        const data = await response.json();
+        const data = await fetchData('ciclismo_equipe', './json/equipe.json');
         const atletas = data.atletas;
         
         if (data.conteudo) {
@@ -317,10 +336,7 @@ async function loadPatrocinadores() {
     const wrapper = document.getElementById('parceiros-grid');
     
     try {
-        const response = await fetch('./json/patrocinadores.json');
-        if (!response.ok) throw new Error('Falha ao carregar patrocinadores');
-        
-        const data = await response.json();
+        const data = await fetchData('ciclismo_patrocinadores', './json/patrocinadores.json');
         
         if (data.conteudo) {
             const titleP1 = document.getElementById('parceiros-title-p1');
@@ -378,10 +394,7 @@ async function loadTitulos() {
     if (!container) return;
     
     try {
-        const response = await fetch('./json/titulos.json');
-        if (!response.ok) throw new Error('Falha ao carregar títulos');
-        
-        const data = await response.json();
+        const data = await fetchData('ciclismo_titulos', './json/titulos.json');
         const historico = data.historico_titulos;
         
         if (data.conteudo) {
@@ -473,10 +486,7 @@ async function loadHeroSlider() {
     if (!bgContainer) return;
 
     try {
-        const response = await fetch('./json/hero.json');
-        if (!response.ok) throw new Error('Falha ao carregar hero.json');
-        
-        const data = await response.json();
+        const data = await fetchData('ciclismo_hero', './json/hero.json');
         
         // Atualizar textos do Hero
         if (data.conteudo) {
@@ -526,10 +536,7 @@ async function loadMasterSponsor() {
     if (!container) return;
 
     try {
-        const response = await fetch('./json/master.json');
-        if (!response.ok) throw new Error('Falha ao carregar master.json');
-        
-        const data = await response.json();
+        const data = await fetchData('ciclismo_master', './json/master.json');
         const master = data.naming_rights;
         
         if (master && master.ativo) {
@@ -582,9 +589,8 @@ async function initPitchConfig() {
     
     try {
         // Carregar opções do patrocinadores.json para o select
-        const response = await fetch('./json/patrocinadores.json');
-        if (response.ok) {
-            const data = await response.json();
+        const data = await fetchData('ciclismo_patrocinadores', './json/patrocinadores.json');
+        if (data) {
             const patrocs = data.patrocinadores || [];
             
             let optionsHtml = `<option value="">-- Sem Patrocinador Master --</option>`;
@@ -681,10 +687,7 @@ function initPixCopy() {
    ========================================================================== */
 async function loadContatos() {
     try {
-        const response = await fetch('./json/contatos.json');
-        if (!response.ok) throw new Error('Falha ao carregar contatos');
-        
-        const data = await response.json();
+        const data = await fetchData('ciclismo_contatos', './json/contatos.json');
         
         // Atualizar Apoie
         if (data.apoio) {
@@ -785,10 +788,7 @@ async function loadPacotesPatrocinio() {
     if (!grid) return;
     
     try {
-        const response = await fetch('./json/pacotes_patrocinio.json');
-        if (!response.ok) throw new Error('Falha ao carregar pacotes de patrocínio');
-        
-        const data = await response.json();
+        const data = await fetchData('ciclismo_pacotes_patrocinio', './json/pacotes_patrocinio.json');
         const cotas = data.cotas;
         
         if (data.conteudo) {
@@ -813,11 +813,8 @@ async function loadPacotesPatrocinio() {
             // Busca o email global configurado para usar nos botões de Solicitar Proposta
             let emailContato = 'contato@exemplo.com';
             try {
-                const contatoRes = await fetch('./json/contatos.json');
-                if (contatoRes.ok) {
-                    const contatoData = await contatoRes.json();
-                    if (contatoData.email) emailContato = contatoData.email;
-                }
+                const contatoData = await fetchData('ciclismo_contatos', './json/contatos.json');
+                if (contatoData && contatoData.email) emailContato = contatoData.email;
             } catch (e) {
                 console.warn("Não foi possível pré-carregar email para os pacotes.");
             }
@@ -878,10 +875,7 @@ async function loadSobre() {
     };
 
     try {
-        const response = await fetch('./json/sobre.json');
-        if (!response.ok) throw new Error('Falha ao carregar arquivo sobre.json');
-        
-        const data = await response.json();
+        const data = await fetchData('ciclismo_sobre', './json/sobre.json');
         
         const titleP1 = document.getElementById('sobre-title-p1');
         if (titleP1 && data.titulo_parte1) titleP1.textContent = data.titulo_parte1;
@@ -925,10 +919,7 @@ async function loadSobre() {
    ========================================================================== */
 async function loadCampanha() {
     try {
-        const response = await fetch('./json/campanha.json');
-        if (!response.ok) throw new Error('Falha ao carregar arquivo campanha.json');
-        
-        const data = await response.json();
+        const data = await fetchData('ciclismo_campanha', './json/campanha.json');
         
         if (data.conteudo) {
             const titleP1 = document.getElementById('campanha-title-p1');
@@ -1016,4 +1007,22 @@ function initPixCopy() {
         }
         document.body.removeChild(textArea);
     }
+}
+
+/* ==========================================================================
+   Theme Toggle
+   ========================================================================== */
+function initThemeToggle() {
+    const btn = document.getElementById('theme-toggle');
+    if (!btn) return;
+
+    btn.addEventListener('click', () => {
+        document.documentElement.classList.toggle('light');
+        const isLight = document.documentElement.classList.contains('light');
+        localStorage.setItem('site_theme', isLight ? 'light' : 'dark');
+        btn.textContent = isLight ? '??' : '??';
+    });
+    
+    const isLight = document.documentElement.classList.contains('light');
+    btn.textContent = isLight ? '??' : '??';
 }

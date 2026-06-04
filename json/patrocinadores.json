@@ -17,7 +17,7 @@
             "id": 6,
             "nome": "Banrisul",
             "tipo": "imagem",
-            "src": "https://www.rbsdirect.com.br/filestore/5/4/4/7/4/7/2_c2f44cf87c1a02d/2747445_0c41128b514a816.jpg?w=1024&h=512&a=c&version=1575255600",
+            "src": "src/sponsors/logo_banrisul_1.png",
             "cor_primaria": "#0082FF",
             "cor_secundaria": "#00D2B4"
         },
@@ -25,7 +25,7 @@
             "id": 7,
             "nome": "Rosul Combustiveis",
             "tipo": "imagem",
-            "src": "src/sponsors/logo_rosul.png",
+            "src": "src/sponsors/logo-rosul.png",
             "cor_primaria": "#007A9F",
             "cor_secundaria": "#092B54"
         },
@@ -49,9 +49,17 @@
             "id": 10,
             "nome": "Siñeriz Free Shop",
             "tipo": "imagem",
-            "imagem": "src/sponsors/logo_sineriz.webp",
+            "imagem": "src/sponsors/logo_zineriz.png",
             "cor_primaria": "#427B13",
             "cor_secundaria": "#6FB014"
+        },
+        {
+            "id": 11,
+            "tipo": "imagem",
+            "src": "src/sponsors/logo_sicredi.svg",
+            "cor_primaria": "#009E3A",
+            "cor_secundaria": "#005A2B",
+            "nome": "Sicredi"
         }
     ]
 }
