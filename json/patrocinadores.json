@@ -9,7 +9,7 @@
             "id": 5,
             "nome": "Shopping China Importados",
             "tipo": "imagem",
-            "src": "https://i0.wp.com/comprasimportadas.com/wp-content/uploads/2018/03/shopping-china-522008.jpg",
+            "src": "src/sponsors/logo-shopping-china_1.png",
             "cor_primaria": "#FF2A2A",
             "cor_secundaria": "#4A6BFF"
         },
