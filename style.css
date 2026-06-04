@@ -1627,8 +1627,10 @@ footer h4 {
     }
 
     .config-panel {
-        width: calc(100% - 2rem);
+        left: 1rem;
         right: 1rem;
+        width: auto;
         bottom: 5rem;
+        transform-origin: bottom right;
     }
 }
