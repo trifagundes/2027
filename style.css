@@ -1620,4 +1620,15 @@ footer h4 {
     .hero-widget {
         padding: 1.5rem;
     }
+
+    .fab-btn {
+        right: 1rem;
+        bottom: 1rem;
+    }
+
+    .config-panel {
+        width: calc(100% - 2rem);
+        right: 1rem;
+        bottom: 5rem;
+    }
 }
