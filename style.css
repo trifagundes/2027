@@ -1535,6 +1535,17 @@ footer h4 {
         padding: 2.5rem 1.5rem;
     }
 
+    .nr-content {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .naming-rights-banner .btn-primary {
+        width: 100%;
+        white-space: normal;
+        padding: 0.875rem 1rem;
+    }
+
     .footer-grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -1643,6 +1654,10 @@ footer h4 {
     }
 
     .cta-box {
+        padding: 1.5rem 1rem;
+    }
+
+    .naming-rights-banner {
         padding: 1.5rem 1rem;
     }
 
