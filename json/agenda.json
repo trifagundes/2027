@@ -1,4 +1,9 @@
 {
+  "conteudo": {
+    "titulo_parte1": "Agenda ",
+    "titulo_parte2": "2027",
+    "subtitulo": "Onde nossa equipe e nossas marcas parceiras estarão ao longo do ano."
+  },
   "trimestres": [
     {
       "id": "q1",

@@ -1,4 +1,12 @@
 {
+    "conteudo": {
+        "badge": "Projeto 2027",
+        "titulo_parte1": "Rangers",
+        "titulo_parte2": " Cycling<br>Sport Team",
+        "descricao": "Não existe segredo entre o homem e a bike. O que existe é equilíbrio entre corpo, mente e treinos. Faça parte da nossa jornada na temporada 2027!",
+        "btn_primario": "Seja um Patrocinador",
+        "btn_secundario": "Apoiar Projeto"
+    },
     "slides": [
         {
             "src": "https://images.unsplash.com/photo-1615632778185-48e15a6f68bf",

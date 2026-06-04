@@ -8,8 +8,18 @@
     "strava": "https://strava.com/clubs/seu_clube"
   },
   "apoio": {
-    "pix": "sua-chave-pix@email.com",
+    "pix": "s8789987ua-chave-pix@email.com",
     "vaquinha": "https://vaka.me/seu-id",
     "apoia_se": "https://apoia.se/sua_campanha"
+  },
+  "rodape": {
+    "logo_texto": "RANGERS c",
+    "titulo_links": "Links Úteis",
+    "link_1": "O Projeto",
+    "link_2": "Atletas",
+    "link_3": "Patrocinadores",
+    "titulo_contato": "Contato",
+    "descricao": "União Binacional de Ciclismo.<br>Sant'Ana do Livramento, Brasil - Uruguai.",
+    "copyright": "© 2026 Rangers Cycling Sport Team. Todos os direitos reservados. Projeto 2027."
   }
 }

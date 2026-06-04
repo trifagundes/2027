@@ -1,4 +1,9 @@
 {
+    "conteudo": {
+        "titulo_parte1": "Nossas ",
+        "titulo_parte2": "Conquistas",
+        "subtitulo": "Um histórico de vitórias que comprova a força do nosso projeto."
+    },
     "historico_titulos": [
         {
             "ano": 2021,

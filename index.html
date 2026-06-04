@@ -55,13 +55,12 @@
             <div class="hero-bg-overlay"></div>
             <div class="container hero-layout">
                 <div class="hero-content fade-in-up">
-                    <span class="badge">Projeto 2027</span>
-                    <h1><span class="text-gradient">Rangers</span> Cycling<br>Sport Team</h1>
-                    <p>Não existe segredo entre o homem e a bike. O que existe é equilíbrio entre corpo, mente e
-                        treinos. Faça parte da nossa jornada na temporada 2027!</p>
+                    <span class="badge" id="hero-badge">Carregando...</span>
+                    <h1><span class="text-gradient" id="hero-title-p1"></span><span id="hero-title-p2"></span></h1>
+                    <p id="hero-desc">Carregando...</p>
                     <div class="hero-actions">
-                        <a href="#patrocinios" class="btn-primary">Seja um Patrocinador</a>
-                        <a href="#apoie" class="btn-secondary">Apoiar Projeto</a>
+                        <a href="#patrocinios" class="btn-primary" id="hero-btn-primary"></a>
+                        <a href="#apoie" class="btn-secondary" id="hero-btn-secondary"></a>
                     </div>
                 </div>
 
@@ -71,7 +70,7 @@
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                         </svg>
-                        <span>Temporada 2027</span>
+                        <span id="km-widget-temporada">Carregando...</span>
                     </div>
                     <div class="widget-body">
                         <div class="km-number"><span id="km-counter">0</span><span class="km-unit">km</span></div>
@@ -96,50 +95,11 @@
         <section id="sobre" class="section-padding">
             <div class="container">
                 <div class="section-header fade-in">
-                    <h2>Nossa <span class="text-gradient">História</span></h2>
-                    <p class="subtitle">Somos a 3ª geração de uma equipe de ciclismo amador binacional, nascida em 2020
-                        através da amizade entre atletas de Santana do Livramento (BR) e Rivera (UY).</p>
+                    <h2><span id="sobre-title-p1"></span><span class="text-gradient" id="sobre-title-p2"></span></h2>
+                    <p class="subtitle" id="sobre-subtitle">Carregando...</p>
                 </div>
-                <div class="sobre-grid">
-                    <div class="sobre-card fade-in">
-                        <div class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <circle cx="12" cy="12" r="6"></circle>
-                                <circle cx="12" cy="12" r="2"></circle>
-                            </svg>
-                        </div>
-                        <h3>Nosso Objetivo</h3>
-                        <p>Representar as cidades gêmeas e a região do pampa nas competições de Mountain Bike (MTB) e
-                            Estrada (Speed), incentivando o esporte transformador.</p>
-                    </div>
-                    <div class="sobre-card fade-in" style="transition-delay: 0.1s">
-                        <div class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                                <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon>
-                                <line x1="9" y1="3" x2="9" y2="18"></line>
-                                <line x1="15" y1="6" x2="15" y2="21"></line>
-                            </svg>
-                        </div>
-                        <h3>Treinos e Roteiros</h3>
-                        <p>Até 340km semanais acumulando mais de 1.600m de altimetria. Treinamos em vias públicas,
-                            rodovias e estradas rurais, com encontros abertos à comunidade.</p>
-                    </div>
-                    <div class="sobre-card fade-in" style="transition-delay: 0.2s">
-                        <div class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                                <path
-                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                </path>
-                            </svg>
-                        </div>
-                        <h3>Ação Social (24h)</h3>
-                        <p>Promovemos o Desafio 24h, onde nossos atletas pedalam ininterruptamente para arrecadar
-                            alimentos, engajando toda a comunidade local.</p>
-                    </div>
+                <div class="sobre-grid" id="sobre-grid">
+                    <div class="loading-spinner">Carregando história...</div>
                 </div>
             </div>
         </section>
@@ -148,8 +108,8 @@
         <section id="atletas" class="section-padding bg-alt">
             <div class="container">
                 <div class="section-header fade-in">
-                    <h2>Nossos <span class="text-gradient">Atletas</span></h2>
-                    <p class="subtitle">O motor da nossa equipe. Conheça as estrelas do pelotão Rangers.</p>
+                    <h2><span id="atletas-title-p1"></span><span class="text-gradient" id="atletas-title-p2"></span></h2>
+                    <p class="subtitle" id="atletas-subtitle">Carregando...</p>
                 </div>
                 <div id="atletas-grid" class="grid-layout">
                     <!-- Os atletas serão carregados via JavaScript aqui -->
@@ -162,8 +122,8 @@
         <section id="agenda" class="section-padding">
             <div class="container">
                 <div class="section-header fade-in">
-                    <h2>Agenda <span class="text-gradient">2027</span></h2>
-                    <p class="subtitle">Onde nossa equipe e nossas marcas parceiras estarão ao longo do ano.</p>
+                    <h2><span id="agenda-title-p1"></span><span class="text-gradient" id="agenda-title-p2"></span></h2>
+                    <p class="subtitle" id="agenda-subtitle">Carregando...</p>
                 </div>
 
                 <div id="agenda-container" class="agenda-tabs-container">
@@ -176,8 +136,8 @@
         <section id="conquistas" class="section-padding bg-alt">
             <div class="container">
                 <div class="section-header fade-in">
-                    <h2>Nossas <span class="text-gradient">Conquistas</span></h2>
-                    <p class="subtitle">Um histórico de vitórias que comprova a força do nosso projeto.</p>
+                    <h2><span id="titulos-title-p1"></span><span class="text-gradient" id="titulos-title-p2"></span></h2>
+                    <p class="subtitle" id="titulos-subtitle">Carregando...</p>
                 </div>
                 <div id="titulos-container" class="titulos-wrapper">
                     <div class="loading-spinner">Carregando conquistas...</div>
@@ -189,9 +149,8 @@
         <section id="patrocinios" class="section-padding">
             <div class="container">
                 <div class="section-header fade-in">
-                    <h2>Seja um <span class="text-gradient">Patrocinador</span></h2>
-                    <p class="subtitle">Associe sua marca à vitória. Conheça nossos pacotes comerciais para a temporada
-                        2027.</p>
+                    <h2><span id="pacotes-title-p1"></span><span class="text-gradient" id="pacotes-title-p2"></span></h2>
+                    <p class="subtitle" id="pacotes-subtitle">Carregando...</p>
                 </div>
                 <div class="pricing-grid" id="pacotes-grid">
                     <!-- Os pacotes serão carregados via JavaScript aqui -->
@@ -200,12 +159,10 @@
 
                 <div class="naming-rights-banner fade-in">
                     <div class="nr-content">
-                        <h3>Cota Master / Naming Rights</h3>
-                        <p>Seja o patrocinador principal e dê nome à equipe (Ex: Rangers "Sua Marca" Cycling Team).
-                            Visibilidade absoluta e exclusividade no segmento.</p>
+                        <h3 id="nr-titulo">Carregando...</h3>
+                        <p id="nr-descricao">Carregando...</p>
                     </div>
-                    <a href="https://wa.me/5555999999999?text=Ol%C3%A1%21%20Tenho%20interesse%20na%20Cota%20Master%20%2F%20Naming%20Rights%20da%20equipe%20Rangers%202027." target="_blank" rel="noopener noreferrer" class="btn-primary">Falar
-                        com a Equipe no WhatsApp</a>
+                    <a href="https://wa.me/5555999999999?text=Ol%C3%A1%21%20Tenho%20interesse%20na%20Cota%20Master%20%2F%20Naming%20Rights%20da%20equipe%20Rangers%202027." target="_blank" rel="noopener noreferrer" class="btn-primary" id="nr-botao">...</a>
                 </div>
             </div>
         </section>
@@ -214,7 +171,7 @@
         <section id="parceiros" class="section-padding bg-alt">
             <div class="container">
                 <div class="section-header fade-in">
-                    <h2>Marcas que já <span class="text-gradient">Pedalam</span> com a gente</h2>
+                    <h2><span id="parceiros-title-p1"></span><span class="text-gradient" id="parceiros-title-p2"></span><span id="parceiros-title-p3"></span></h2>
                 </div>
                 <div id="parceiros-grid" class="sponsors-wrapper">
                     <!-- Patrocinadores serão carregados via JavaScript -->
@@ -227,18 +184,16 @@
             <div class="container">
                 <div class="cta-box fade-in">
                     <div class="cta-text">
-                        <h2>Abrace nosso <span class="text-gradient">Circuito</span></h2>
-                        <p>Além de manter a estrutura da nossa equipe de alto rendimento, seu apoio viabiliza
-                            iniciativas sociais importantes como o nosso Desafio 24h de arrecadação de alimentos. Faça
-                            parte dessa engrenagem!</p>
+                        <h2><span id="campanha-title-p1"></span><span class="text-gradient" id="campanha-title-p2"></span></h2>
+                        <p id="campanha-texto">Carregando...</p>
 
                         <div class="support-methods">
                             <div class="support-item">
                                 <span class="support-icon">💸</span>
                                 <div class="pix-container">
-                                    <h4>Chave PIX (E-mail)</h4>
+                                    <h4 id="campanha-label-pix">Carregando...</h4>
                                     <div class="pix-copy-wrapper">
-                                        <p class="pix-key" id="pix-key-text">doacoes@rangerscycling.com.br</p>
+                                        <p class="pix-key" id="pix-key-text">Carregando...</p>
                                         <button class="btn-copy" id="btn-copy-pix" aria-label="Copiar chave PIX"
                                             title="Copiar chave">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -250,27 +205,26 @@
                                             </svg>
                                         </button>
                                     </div>
-                                    <span class="copy-feedback" id="copy-feedback">Chave copiada!</span>
                                 </div>
                             </div>
                         </div>
 
                         <div class="support-buttons">
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-primary btn-vakinha" id="link-vakinha">Apoiar no Vakinha</a>
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-outline btn-apoiase" id="link-apoiase">Apoia.se</a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-primary btn-vakinha" id="link-vakinha">...</a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-outline btn-apoiase" id="link-apoiase">...</a>
                         </div>
                     </div>
                     <div class="cta-image">
                         <!-- Imagem gerada via CSS ou placeholder no JS -->
                         <div class="glass-card mockup-card">
-                            <h3>Juntos transpomos fronteiras!</h3>
+                            <h3 id="campanha-titulo">Carregando...</h3>
                             <div class="progress-container">
                                 <div class="progress-bar">
-                                    <div class="progress-fill" style="width: 35%;"></div>
+                                    <div class="progress-fill" id="campanha-barra" style="width: 0%;"></div>
                                 </div>
                                 <div class="progress-stats">
-                                    <span>R$ 3.500 arrecadados</span>
-                                    <span>Meta: R$ 10.000</span>
+                                    <span id="campanha-arrecadado">R$ 0 arrecadados</span>
+                                    <span id="campanha-meta">Meta: R$ 0</span>
                                 </div>
                             </div>
                         </div>
@@ -285,22 +239,22 @@
         <div class="container footer-grid">
             <div class="footer-brand">
                 <a href="#" class="logo">
-                    <span class="logo-text">RANGERS</span>
+                    <span class="logo-text" id="footer-logo">Carregando...</span>
                 </a>
-                <p>União Binacional de Ciclismo.<br>Sant'Ana do Livramento, Brasil - Uruguai.</p>
+                <p id="footer-descricao"></p>
             </div>
             <div class="footer-links">
-                <h4>Links Úteis</h4>
+                <h4 id="footer-links-title">Carregando...</h4>
                 <ul>
-                    <li><a href="#sobre">O Projeto</a></li>
-                    <li><a href="#atletas">Atletas</a></li>
-                    <li><a href="#patrocinios">Patrocinadores</a></li>
+                    <li><a href="#sobre" id="footer-link-1">Carregando...</a></li>
+                    <li><a href="#atletas" id="footer-link-2">Carregando...</a></li>
+                    <li><a href="#patrocinios" id="footer-link-3">Carregando...</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
-                <h4>Contato</h4>
-                <p id="footer-email">contato@rangerscycling.com.br</p>
-                <p id="footer-phone">+55 (55) 99999-9999</p>
+                <h4 id="footer-contact-title">Carregando...</h4>
+                <p id="footer-email">Carregando...</p>
+                <p id="footer-phone">Carregando...</p>
                 <div class="social-links">
                     <a href="#" target="_blank" rel="noopener noreferrer" id="footer-ig" aria-label="Instagram">IG</a>
                     <a href="#" target="_blank" rel="noopener noreferrer" id="footer-fb" aria-label="Facebook">FB</a>
@@ -310,7 +264,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Rangers Cycling Sport Team. Todos os direitos reservados. Projeto 2027.</p>
+            <p id="footer-copyright"></p>
         </div>
     </footer>
 

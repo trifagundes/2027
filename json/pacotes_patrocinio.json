@@ -1,4 +1,12 @@
 {
+  "conteudo": {
+    "titulo_parte1": "Seja um ",
+    "titulo_parte2": "Patrocinador",
+    "subtitulo": "Associe sua marca à vitória. Conheça nossos pacotes comerciais para a temporada 2027.",
+    "nr_titulo": "Cota Master / Naming Rights",
+    "nr_descricao": "Seja o patrocinador principal e dê nome à equipe (Ex: Rangers \"Sua Marca\" Cycling Team). Visibilidade absoluta e exclusividade no segmento.",
+    "nr_botao": "Falar com a Equipe no WhatsApp"
+  },
   "cotas": [
     {
       "id": "bronze",

@@ -2,6 +2,7 @@
     "equipe": {
         "nome": "Rangers Cycling Sport Team",
         "temporada": 2027,
+        "termo_ciclo": "Temporada",
         "sede": "Sant'Ana do Livramento, RS, Brasil",
         "natureza": "União Binacional de Ciclismo (Brasil - Uruguai)",
         "estatisticas_temporada": {
@@ -9,6 +10,11 @@
             "km_atual": 8450,
             "altimetria_acumulada": 45000
         }
+    },
+    "conteudo": {
+        "titulo_parte1": "Nossos ",
+        "titulo_parte2": "Atletas",
+        "subtitulo": "O motor da nossa equipe. Conheça as estrelas do pelotão Rangers."
     },
     "atletas": [
         {

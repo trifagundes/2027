@@ -1,0 +1,22 @@
+{
+  "titulo_parte1": "Nossa ",
+  "titulo_parte2": "História",
+  "subtitulo": "Somos a 3ª geração de uma equipe de ciclismo amador binacional, nascida em 2020 através da amizade entre atletas de Santana do Livramento (BR) e Rivera (UY).",
+  "cards": [
+    {
+      "icone": "target",
+      "titulo": "Nosso Objetivo",
+      "texto": "Representar as cidades gêmeas e a região do pampa nas competições de Mountain Bike (MTB) e Estrada (Speed), incentivando o esporte transformador."
+    },
+    {
+      "icone": "bike",
+      "titulo": "Treinos e Roteiros",
+      "texto": "Até 340km semanais acumulando mais de 1.600m de altimetria. Treinamos em vias públicas, rodovias e estradas rurais, com encontros abertos à comunidade."
+    },
+    {
+      "icone": "heart",
+      "titulo": "Ação Social (24h)",
+      "texto": "Promovemos o Desafio 24h, onde nossos atletas pedalam ininterruptamente para arrecadar alimentos, engajando toda a comunidade local."
+    }
+  ]
+}
