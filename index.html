@@ -193,55 +193,9 @@
                     <p class="subtitle">Associe sua marca à vitória. Conheça nossos pacotes comerciais para a temporada
                         2027.</p>
                 </div>
-                <div class="pricing-grid">
-                    <!-- Cota Bronze -->
-                    <div class="pricing-card fade-in">
-                        <div class="card-header">
-                            <h3>Bronze</h3>
-                            <div class="price">Consulte</div>
-                        </div>
-                        <ul class="features">
-                            <li><i class="check-icon">✓</i> Logo no site oficial</li>
-                            <li><i class="check-icon">✓</i> Menção em posts nas redes sociais</li>
-                            <li><i class="check-icon">✓</i> Certificado de Apoio ao Esporte</li>
-                        </ul>
-                        <a href="mailto:contato@exemplo.com?subject=Interesse%20Cota%20Bronze"
-                            class="btn-outline">Solicitar Proposta</a>
-                    </div>
-
-                    <!-- Cota Ouro (Destaque) -->
-                    <div class="pricing-card featured fade-in" style="transition-delay: 0.1s">
-                        <div class="badge-popular">Mais Buscado</div>
-                        <div class="card-header">
-                            <h3>Ouro</h3>
-                            <div class="price">Consulte</div>
-                        </div>
-                        <ul class="features">
-                            <li><i class="check-icon">✓</i> Logo em destaque no uniforme</li>
-                            <li><i class="check-icon">✓</i> Logo em tendas e carros de apoio</li>
-                            <li><i class="check-icon">✓</i> Posts exclusivos da marca</li>
-                            <li><i class="check-icon">✓</i> Destaque máximo no site oficial</li>
-                            <li><i class="check-icon">✓</i> Presença de atletas em eventos da marca</li>
-                        </ul>
-                        <a href="mailto:contato@exemplo.com?subject=Interesse%20Cota%20Ouro"
-                            class="btn-primary">Solicitar Proposta</a>
-                    </div>
-
-                    <!-- Cota Prata -->
-                    <div class="pricing-card fade-in" style="transition-delay: 0.2s">
-                        <div class="card-header">
-                            <h3>Prata</h3>
-                            <div class="price">Consulte</div>
-                        </div>
-                        <ul class="features">
-                            <li><i class="check-icon">✓</i> Logo no uniforme (secundário)</li>
-                            <li><i class="check-icon">✓</i> Menção em todos os vídeos/reels</li>
-                            <li><i class="check-icon">✓</i> Destaque médio no site oficial</li>
-                            <li><i class="check-icon">✓</i> Banner em eventos próprios</li>
-                        </ul>
-                        <a href="mailto:contato@exemplo.com?subject=Interesse%20Cota%20Prata"
-                            class="btn-outline">Solicitar Proposta</a>
-                    </div>
+                <div class="pricing-grid" id="pacotes-grid">
+                    <!-- Os pacotes serão carregados via JavaScript aqui -->
+                    <div class="loading-spinner">Carregando pacotes...</div>
                 </div>
 
                 <div class="naming-rights-banner fade-in">
@@ -250,8 +204,8 @@
                         <p>Seja o patrocinador principal e dê nome à equipe (Ex: Rangers "Sua Marca" Cycling Team).
                             Visibilidade absoluta e exclusividade no segmento.</p>
                     </div>
-                    <a href="mailto:contato@exemplo.com?subject=Interesse%20Naming%20Rights" class="btn-primary">Falar
-                        com a Equipe</a>
+                    <a href="https://wa.me/5555999999999?text=Ol%C3%A1%21%20Tenho%20interesse%20na%20Cota%20Master%20%2F%20Naming%20Rights%20da%20equipe%20Rangers%202027." target="_blank" rel="noopener noreferrer" class="btn-primary">Falar
+                        com a Equipe no WhatsApp</a>
                 </div>
             </div>
         </section>
@@ -302,8 +256,8 @@
                         </div>
 
                         <div class="support-buttons">
-                            <a href="#" class="btn-primary btn-vakinha">Apoiar no Vakinha</a>
-                            <a href="#" class="btn-outline btn-apoiase">Apoia.se</a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-primary btn-vakinha" id="link-vakinha">Apoiar no Vakinha</a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-outline btn-apoiase" id="link-apoiase">Apoia.se</a>
                         </div>
                     </div>
                     <div class="cta-image">
@@ -345,12 +299,13 @@
             </div>
             <div class="footer-contact">
                 <h4>Contato</h4>
-                <p>contato@rangerscycling.com.br</p>
-                <p>+55 (55) 99999-9999</p>
+                <p id="footer-email">contato@rangerscycling.com.br</p>
+                <p id="footer-phone">+55 (55) 99999-9999</p>
                 <div class="social-links">
-                    <a href="#" aria-label="Instagram">IG</a>
-                    <a href="#" aria-label="Facebook">FB</a>
-                    <a href="#" aria-label="Strava">ST</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" id="footer-ig" aria-label="Instagram">IG</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" id="footer-fb" aria-label="Facebook">FB</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" id="footer-st" aria-label="Strava">ST</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" id="footer-yt" aria-label="Youtube" style="display: none;">YT</a>
                 </div>
             </div>
         </div>

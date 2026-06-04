@@ -1,0 +1,15 @@
+{
+  "telefone": "(51) 99999-6666",
+  "email": "contato@equipeciclismo.com.br",
+  "redes_sociais": {
+    "instagram": "https://instagram.com/seu_perfil",
+    "facebook": "https://facebook.com/seu_perfil",
+    "youtube": "https://youtube.com/seu_canal",
+    "strava": "https://strava.com/clubs/seu_clube"
+  },
+  "apoio": {
+    "pix": "sua-chave-pix@email.com",
+    "vaquinha": "https://vaka.me/seu-id",
+    "apoia_se": "https://apoia.se/sua_campanha"
+  }
+}

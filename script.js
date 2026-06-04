@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
     loadPatrocinadores();
     loadAgenda();
     initPixCopy();
+    loadContatos();
+    loadPacotesPatrocinio();
 });
 
 /* ==========================================================================
@@ -55,7 +57,7 @@ async function loadAgenda() {
     if (!container) return;
 
     try {
-        const response = await fetch('./agenda.json');
+        const response = await fetch('./json/agenda.json');
         if (!response.ok) throw new Error('Falha ao carregar agenda');
         
         const data = await response.json();
@@ -167,7 +169,7 @@ async function loadEquipe() {
     const grid = document.getElementById('atletas-grid');
     
     try {
-        const response = await fetch('./equipe.json');
+        const response = await fetch('./json/equipe.json');
         if (!response.ok) throw new Error('Falha ao carregar equipe');
         
         const data = await response.json();
@@ -287,7 +289,7 @@ async function loadPatrocinadores() {
     const wrapper = document.getElementById('parceiros-grid');
     
     try {
-        const response = await fetch('./patrocinadores.json');
+        const response = await fetch('./json/patrocinadores.json');
         if (!response.ok) throw new Error('Falha ao carregar patrocinadores');
         
         const data = await response.json();
@@ -339,7 +341,7 @@ async function loadTitulos() {
     if (!container) return;
     
     try {
-        const response = await fetch('./titulos.json');
+        const response = await fetch('./json/titulos.json');
         if (!response.ok) throw new Error('Falha ao carregar títulos');
         
         const data = await response.json();
@@ -425,7 +427,7 @@ async function loadHeroSlider() {
     if (!bgContainer) return;
 
     try {
-        const response = await fetch('./hero.json');
+        const response = await fetch('./json/hero.json');
         if (!response.ok) throw new Error('Falha ao carregar hero.json');
         
         const data = await response.json();
@@ -456,7 +458,7 @@ async function loadMasterSponsor() {
     if (!container) return;
 
     try {
-        const response = await fetch('./master.json');
+        const response = await fetch('./json/master.json');
         if (!response.ok) throw new Error('Falha ao carregar master.json');
         
         const data = await response.json();
@@ -512,7 +514,7 @@ async function initPitchConfig() {
     
     try {
         // Carregar opções do patrocinadores.json para o select
-        const response = await fetch('./patrocinadores.json');
+        const response = await fetch('./json/patrocinadores.json');
         if (response.ok) {
             const data = await response.json();
             const patrocs = data.patrocinadores || [];
@@ -604,4 +606,147 @@ function initPixCopy() {
             console.error('Falha ao copiar:', err);
         });
     });
+}
+
+/* ==========================================================================
+   Carregamento de Dados (Contatos e Apoio)
+   ========================================================================== */
+async function loadContatos() {
+    try {
+        const response = await fetch('./json/contatos.json');
+        if (!response.ok) throw new Error('Falha ao carregar contatos');
+        
+        const data = await response.json();
+        
+        // Atualizar Apoie
+        if (data.apoio) {
+            const pixKey = document.getElementById('pix-key-text');
+            if (pixKey && data.apoio.pix) pixKey.textContent = data.apoio.pix;
+            
+            const btnVakinha = document.getElementById('link-vakinha');
+            if (btnVakinha && data.apoio.vaquinha) btnVakinha.href = data.apoio.vaquinha;
+            
+            const btnApoiase = document.getElementById('link-apoiase');
+            if (btnApoiase && data.apoio.apoia_se) btnApoiase.href = data.apoio.apoia_se;
+        }
+        
+        // Atualizar Footer
+        const footerEmail = document.getElementById('footer-email');
+        if (footerEmail && data.email) footerEmail.textContent = data.email;
+        
+        const footerPhone = document.getElementById('footer-phone');
+        if (footerPhone && data.telefone) footerPhone.textContent = data.telefone;
+        
+        if (data.redes_sociais) {
+            const ig = document.getElementById('footer-ig');
+            if (ig && data.redes_sociais.instagram) ig.href = data.redes_sociais.instagram;
+            
+            const fb = document.getElementById('footer-fb');
+            if (fb && data.redes_sociais.facebook) fb.href = data.redes_sociais.facebook;
+            
+            const st = document.getElementById('footer-st');
+            if (st && data.redes_sociais.strava) st.href = data.redes_sociais.strava;
+            
+            const yt = document.getElementById('footer-yt');
+            if (yt && data.redes_sociais.youtube) {
+                yt.href = data.redes_sociais.youtube;
+                yt.style.display = ''; // Volta pro padrão
+            }
+        }
+
+        // Atualizar links de contato (Mailto) nos pacotes
+        if (data.email) {
+            const mailtoLinks = document.querySelectorAll('a[href^="mailto:"]');
+            mailtoLinks.forEach(link => {
+                if (link.href.includes('contato@exemplo.com')) {
+                    link.href = link.href.replace('contato@exemplo.com', data.email);
+                }
+            });
+        }
+
+        // Atualizar link do WhatsApp
+        if (data.telefone) {
+            const waLink = document.querySelector('a[href^="https://wa.me/"]');
+            if (waLink) {
+                let numericPhone = "";
+                for (let i = 0; i < data.telefone.length; i++) {
+                    if (data.telefone[i] >= '0' && data.telefone[i] <= '9') {
+                        numericPhone += data.telefone[i];
+                    }
+                }
+                waLink.href = waLink.href.replace(/wa.me\/[0-9]+/, "wa.me/" + numericPhone);
+            }
+        }
+        
+    } catch (error) {
+        console.error("Erro ao carregar contatos:", error);
+    }
+}
+
+/* ==========================================================================
+   Carregamento de Dados (Pacotes de Patrocínio)
+   ========================================================================== */
+async function loadPacotesPatrocinio() {
+    const grid = document.getElementById('pacotes-grid');
+    if (!grid) return;
+    
+    try {
+        const response = await fetch('./json/pacotes_patrocinio.json');
+        if (!response.ok) throw new Error('Falha ao carregar pacotes de patrocínio');
+        
+        const data = await response.json();
+        const cotas = data.cotas;
+        
+        if (cotas && cotas.length > 0) {
+            grid.innerHTML = ''; // Limpa loading
+            
+            // Busca o email global configurado para usar nos botões de Solicitar Proposta
+            let emailContato = 'contato@exemplo.com';
+            try {
+                const contatoRes = await fetch('./json/contatos.json');
+                if (contatoRes.ok) {
+                    const contatoData = await contatoRes.json();
+                    if (contatoData.email) emailContato = contatoData.email;
+                }
+            } catch (e) {
+                console.warn("Não foi possível pré-carregar email para os pacotes.");
+            }
+            
+            cotas.forEach((cota, index) => {
+                const card = document.createElement('div');
+                card.className = `pricing-card fade-in ${cota.destaque ? 'featured' : ''}`;
+                card.style.transitionDelay = `${(index % 3) * 0.1}s`;
+                
+                let beneficiosHtml = '';
+                if (cota.beneficios) {
+                    cota.beneficios.forEach(ben => {
+                        beneficiosHtml += `<li><i class="check-icon">✓</i> ${ben}</li>`;
+                    });
+                }
+                
+                const btnClass = cota.destaque ? 'btn-primary' : 'btn-outline';
+                
+                card.innerHTML = `
+                    ${cota.tag_destaque ? `<div class="badge-popular">${cota.tag_destaque}</div>` : ''}
+                    <div class="card-header">
+                        <h3>${cota.nome}</h3>
+                        <div class="price">${cota.preco}</div>
+                    </div>
+                    <ul class="features">
+                        ${beneficiosHtml}
+                    </ul>
+                    <a href="mailto:${emailContato}?subject=Interesse%20Cota%20${encodeURIComponent(cota.nome)}" target="_blank" rel="noopener noreferrer" class="${btnClass}">Solicitar Proposta</a>
+                `;
+                
+                grid.appendChild(card);
+            });
+            
+            initScrollAnimations();
+        } else {
+            grid.innerHTML = '<p>Nenhum pacote encontrado.</p>';
+        }
+    } catch (error) {
+        console.error("Erro ao carregar pacotes:", error);
+        grid.innerHTML = `<p style="color: #ff5555">Erro ao carregar os pacotes.</p>`;
+    }
 }

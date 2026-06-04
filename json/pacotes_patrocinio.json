@@ -1,0 +1,43 @@
+{
+  "cotas": [
+    {
+      "id": "bronze",
+      "nome": "Bronze",
+      "preco": "Consulte",
+      "destaque": false,
+      "tag_destaque": "",
+      "beneficios": [
+        "Logo no site oficial",
+        "Menção em posts nas redes sociais",
+        "Certificado de Apoio ao Esporte"
+      ]
+    },
+    {
+      "id": "ouro",
+      "nome": "Ouro",
+      "preco": "Consulte",
+      "destaque": true,
+      "tag_destaque": "Mais Buscado",
+      "beneficios": [
+        "Logo em destaque no uniforme",
+        "Logo em tendas e carros de apoio",
+        "Posts exclusivos da marca",
+        "Destaque máximo no site oficial",
+        "Presença de atletas em eventos da marca"
+      ]
+    },
+    {
+      "id": "prata",
+      "nome": "Prata",
+      "preco": "Consulte",
+      "destaque": false,
+      "tag_destaque": "",
+      "beneficios": [
+        "Logo no uniforme (secundário)",
+        "Menção em todos os vídeos/reels",
+        "Destaque médio no site oficial",
+        "Banner em eventos próprios"
+      ]
+    }
+  ]
+}
